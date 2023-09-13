@@ -1,0 +1,110 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+header{
+background-color:black;
+display: flex;
+justify-content:space-between;
+align-items: center;
+padding: 10px 50px;
+}
+nav{
+    display: flex;
+    gap: 20px;
+}
+#logo{
+    width: 100px;
+}
+.nav-link{
+    color:white;
+    text-decoration: none;
+    border:1px solid white;
+    padding: 10px;
+    border-radius: 10px;
+}
+footer{
+    background-color:black;
+    color:white;
+    padding:20px;
+    text-align: center;
+    position: absolute;
+    bottom:0;
+    width: 100%;
+}
+#event{
+    display:flex;
+    justify-content: center;
+    gap:50px;
+    padding:60px;
+}
+.event-card{
+    text-align:center;
+    box-shadow:0 6px 8px rgb(0,0,0,1);
+    padding:30px;
+    border-radius: 10px;
+    width:250px;
+    position: relative;
+    top:30px;
+}
+.detail-btn{
+    border:1px solid black;
+    padding:10px;
+    text-decoration: none;
+    color:black;
+    border-radius:10px;
+}
+
+#eventpage{
+    border: 1px solid black;
+}
+body{
+    margin:0;
+    padding:0;
+}
+header{
+    background:black;
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+    padding:10px 50px;
+}
+footer{
+    background:black;
+    position: absolute;
+    bottom: 0;
+    width:100%;
+    color:white;
+    text-align: center;
+}
+nav{
+    display: flex;
+    gap:20px;
+}
+#logo{
+    width:100px;
+}
+.nav-link{
+    color:white;
+    text-decoration:none;
+    border: 1px solid white;
+    padding:10px;
+    border-radius: 10px;;
+}
+#event1{
+
+    display:flex;
+    justify-content: center;
+    padding:20px;
+}
+.event-card1{
+    text-align:center;
+    box-shadow: 0 10px 30px rgb(0,0,0,1);
+    padding:30px;
+    border-radius:10px;
+    width:500px;
+}
+
+form{
+    border: 1px solid black;
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Management</title>
+    <link rel="stylesheet" href="{% static 'index.css' %}">
+    <link rel="eventspage" href="event.html">
+</head>
+<body>
+    <header>
+        <img id="logo" src="https://tse4.mm.bing.net/th?id=OIP.lst_wNR38tzef8sE3kDyqQHaIM&pid=Api&P=0&h=180" alt="nataraj logo" />
+        <nav>
+            <a class="nav-link" href="">Home</a>
+            <a class="nav-link" href="">Login</a>
+            <a class="nav-link" href="">Registeration</a>
+        </nav>
+    </header>
+    <section id="event">
+        {% for event in events %}
+        <div class="event-card">
+            <h3 class="event-ttle">{{event.event_title}}</h3>
+            <p class="event-location">Location: {{event.location}}</p>
+            <p class="event-date">Date :{{event.date}}</p>
+            <a href="{% url 'eventdetail' event.pk %}" class=""details-btn">Details</a>
+        </div>
+        {% endfor %}
+        
+    </section>
+    <footer>
+        <p>©2023 Event Registration System</p>
+    </footer>
+</body>
+</html>
